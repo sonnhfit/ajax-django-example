@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<button onclick="myfunc()"> get data</button>
+<input value='' id="se" onkeyup="getRecommend()" onkeydown="getRecommend()">
+
+<table id="mytb">
+</table>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/myscript.js' %}"></script>
+</body>
+</html> 
